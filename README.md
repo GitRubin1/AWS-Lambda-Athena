@@ -38,5 +38,5 @@ https://stackoverflow.com/questions/55058618/executing-athena-query-from-python-
 
 ### Note
 
-Input file had IP addresses so not adding that file in the repo
+Input file had IP addresses so not adding file in the repo
 
