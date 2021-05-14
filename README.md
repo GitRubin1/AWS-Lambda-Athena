@@ -14,16 +14,21 @@ Built a lambda function to query elb logs I had stored in S3
 ## Setup
 
 Create an output bucket in S3 where you can store the output from the Lambda Function.
-Go into Athena, select settings in the top right corner, and select the output bucket
+Go into Athena, select settings in the top right corner, and select the output bucket.
 
-This project requires a database and a table from there.
+This project requires a database and a table.
 You can use table already loaded into Athena or you can upload data.
 Select 'Connect Data Source' on Athena and select AWS Glue
 Go through the steps. Note that you will incur a small charge if you use Glue.
 Alternatively you can select 'Create Table', select 'from S3 bucket data', and follow the instructions from there
 
 You must set up permissioning for your Lambda Function.
-Set up an IAM Role
+Set up an IAM Role for Lambda. 
+Go ahead and use the [IAM-AthenaLambda.json](https://github.com/GitRubin1/AWS-Lambda-Athena/blob/main/IAM-AthenaLambda.json) policy.
+Additionally, assign the 'AmazonS3FullAccess' policy to the role. 
+
+Once you are done, select Python as your interpreter in Lambda.
+Edit `QueryString`, `QueryExecutionContext`, and `ResultConfiguration` for your database configuration.
 
 ## Acknowledgements
 
