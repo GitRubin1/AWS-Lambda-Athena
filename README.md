@@ -36,3 +36,7 @@ https://www.youtube.com/watch?v=a_Og1t3ULOI as a basis for the project
 
 https://stackoverflow.com/questions/55058618/executing-athena-query-from-python-code-using-boto3-shows-error-botocore-errorf/63023162#63023162?newreg=7af995ec46dd4108b6ecb89c9d4eedca for providing help while troubleshooting
 
+### Note
+
+Input file had IP addresses so not adding that file in the repo
+
